@@ -11,6 +11,10 @@ import Foundation
 internal extension String {
 
     var lt_localized: String {
-        Bundle.resolvedBundle.localizedString(forKey: self, value: self, table: nil)
+        let bundle = Bundle(for: LifetimeTracker.self)
+        let resourceBundle = bundle
+            .path(forResource: "LifetimeTracker", ofType: "bundle")
+            .map { Bundle(path: $0) ?? bundle } ?? bundle
+        return NSLocalizedString(self, bundle: resourceBundle, comment: self)
     }
 }

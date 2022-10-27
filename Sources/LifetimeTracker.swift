@@ -116,7 +116,7 @@ public extension LifetimeTrackable {
 
 @objc public final class LifetimeTracker: NSObject {
     public typealias UpdateClosure = (_ trackedGroups: [String: LifetimeTracker.EntriesGroup]) -> Void
-    public internal(set) static var instance: LifetimeTracker?
+    public static var instance: LifetimeTracker?
     public typealias LeakClosure = (_ entry: LifetimeTracker.Entry,
                                     _ group: LifetimeTracker.EntriesGroup) -> Void
     private let lock = NSRecursiveLock()

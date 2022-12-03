@@ -158,7 +158,7 @@ public extension LifetimeTrackable {
     @objc public final class EntriesGroup: NSObject {
         @objc public fileprivate(set) var maxCount: Int = 0
         @objc public fileprivate(set) var name: String? = nil
-        @objc public fileprivate(set) var count: Int = 0
+        @objc public var count: Int = 0
         @objc public var entries = [String: Entry]()
         private var usedMaxCountOverride = false
         

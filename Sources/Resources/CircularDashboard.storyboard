@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1We-aU-RGw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1We-aU-RGw">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Lifetime Tracker List View Controller-->
         <scene sceneID="1D4-WH-aQX">
             <objects>
-                <viewController storyboardIdentifier="LifetimeTrackerListViewController" automaticallyAdjustsScrollViewInsets="NO" id="hGY-sM-6JX" customClass="LifetimeTrackerListViewController" customModule="LifetimeTracker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LifetimeTrackerListViewController" automaticallyAdjustsScrollViewInsets="NO" id="hGY-sM-6JX" customClass="LifetimeTrackerListViewController" customModule="PALifetimeTracker" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L1p-ji-3cZ"/>
                         <viewControllerLayoutGuide type="bottom" id="EKh-Hq-gM8"/>
@@ -80,7 +80,7 @@
         <!--Circular Dashboard View Controller-->
         <scene sceneID="4Zo-uU-6cZ">
             <objects>
-                <viewController storyboardIdentifier="CircularDashboardViewController" id="KEm-XY-hTd" customClass="CircularDashboardViewController" customModule="LifetimeTracker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CircularDashboardViewController" id="KEm-XY-hTd" customClass="CircularDashboardViewController" customModule="PALifetimeTracker" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V2L-Wr-Hzg"/>
                         <viewControllerLayoutGuide type="bottom" id="T4O-lB-Vvj"/>

@@ -14,7 +14,9 @@ extension Bundle {
         #if SWIFT_PACKAGE
         return Bundle.module
         #else
-        return Bundle(for: LifetimeTracker.self)
+        let resourceBundleURL = Bundle(for: LifetimeTracker.self)
+            .url(forResource: "PALifetimeTracker", withExtension: "bundle")!
+        return Bundle(url: resourceBundleURL)!
         #endif
     }
 }

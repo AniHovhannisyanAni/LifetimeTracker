@@ -13,7 +13,7 @@ internal extension String {
     var lt_localized: String {
         let bundle = Bundle(for: LifetimeTracker.self)
         let resourceBundle = bundle
-            .path(forResource: "LifetimeTracker", ofType: "bundle")
+            .path(forResource: "PALifetimeTracker", ofType: "bundle")
             .map { Bundle(path: $0) ?? bundle } ?? bundle
         return NSLocalizedString(self, bundle: resourceBundle, comment: self)
     }
